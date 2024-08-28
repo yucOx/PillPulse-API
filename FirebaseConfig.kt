@@ -12,7 +12,7 @@ import java.io.FileNotFoundException
 class FirebaseConfig {
     @Bean
     fun firebaseAuth(): FirebaseAuth {
-        val serviceAccount = this.javaClass.getResourceAsStream("/pillpulse-9d95e-53bf0ae31dc8.json")
+        val serviceAccount = this.javaClass.getResourceAsStream("/pillpulse-********.json")
             ?: throw FileNotFoundException("Firebase configuration file not found")
 
         val options = FirebaseOptions.builder()
